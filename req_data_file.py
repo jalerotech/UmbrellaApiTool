@@ -10,7 +10,6 @@ payload_data = {
 
 tunnel_data = {
     "name": "Site01Tunnel",
-    "siteOriginId": 123456,
     "serviceType": "SIG",
     "deviceType": "ASA",
     "networkCIDRs": [
@@ -22,7 +21,7 @@ tunnel_data = {
         "type": "PSK",
         "parameters": {
             "idPrefix": "prefix-string",
-            "secret": "This123Secretlong"
+            "secret": "Thisisthe16orlongersecret"
         }
     }
 }
