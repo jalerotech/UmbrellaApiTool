@@ -7,3 +7,22 @@ payload_data = {
     "status": "OPEN",
     "isDynamic": True
 }
+
+tunnel_data = {
+    "name": "Site01Tunnel",
+    "siteOriginId": 123456,
+    "serviceType": "SIG",
+    "deviceType": "ASA",
+    "networkCIDRs": [
+        "123.111.222.25/24",
+        "111.222.39.1/32"
+    ],
+    "transport": {"protocol": "IPSec"},
+    "authentication": {
+        "type": "PSK",
+        "parameters": {
+            "idPrefix": "prefix-string",
+            "secret": "This123Secretlong"
+        }
+    }
+}
