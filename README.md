@@ -1,4 +1,4 @@
-There are 2 scripts created here so far:
+There are 3 main scripts created here so far:
 
 1. CreateAuth.py:
    The purpose of this script is to generate the access token that's used as a Bearer token for subsequent requests towards the umbrella deployment.
