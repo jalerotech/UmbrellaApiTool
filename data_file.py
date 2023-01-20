@@ -9,18 +9,18 @@ payload_data = {
 }
 
 tunnel_data = {
-    "name": "Site01Tunnel",
+    "name": "Site04Tunnel",
     "serviceType": "SIG",
     "deviceType": "ASA",
     "networkCIDRs": [
-        "123.111.222.25/24",
-        "111.222.39.1/32"
+        "123.111.222.2/24",
+        "111.222.39.8/32"
     ],
     "transport": {"protocol": "IPSec"},
     "authentication": {
         "type": "PSK",
         "parameters": {
-            "idPrefix": "prefix-string",
+            "idPrefix": "prefix-string4",
             "secret": "Thisisthe16orlongersecret"
         }
     }
