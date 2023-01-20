@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Umbrella.iml" filepath="$PROJECT_DIR$/.idea/Umbrella.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Umbrella_app_API_modules/.idea/Umbrella_app_API_modules.iml" filepath="$PROJECT_DIR$/../Umbrella_app_API_modules/.idea/Umbrella_app_API_modules.iml" />
     </modules>
   </component>
 </project>
