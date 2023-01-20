@@ -9,7 +9,12 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 
 def remove_tunnel():
-
+    """
+    Removes IPSec Tunnel configuration using the tunnel id provided.
+    This script first runs the get_tunnels() function to get the tunnel data from the deployment.
+    Then executes the delete request.
+    :return:
+    """
     logger = logging.getLogger('Running "remove_tunnel" script...')
 
     # Gets the access token required for further requests
