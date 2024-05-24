@@ -32,6 +32,6 @@ def main(API_KEY_ID, API_KEY):
 
 
 if __name__ == '__main__':
-    API_KEY_ID = "2893a77986cc4340a78733f077db2448"
-    API_KEY = "ed0ee232eae448ef9d610dce03b6255c"
+    API_KEY_ID = "Your_API_Key_Id"
+    API_KEY = "Your_API_Key"
     main(API_KEY_ID, API_KEY)
