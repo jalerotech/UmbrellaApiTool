@@ -1,7 +1,7 @@
 import requests
 import json
 import logging
-from CreateAuth import get_access_token
+from Auth.CreateAuth import get_access_token
 from data_file import api_key_data, payload_data
 
 logging.basicConfig()

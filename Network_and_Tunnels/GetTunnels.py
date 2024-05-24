@@ -1,7 +1,7 @@
 import requests
 import logging
 from data_file import api_key_data
-from CreateAuth import get_access_token
+from Auth.CreateAuth import get_access_token
 
 
 def get_tunnels(access_token) -> (bool, list):
