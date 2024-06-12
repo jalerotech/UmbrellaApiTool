@@ -1,6 +1,6 @@
 import requests
 import logging
-from data_file import api_key_data
+# from data_file import api_key_data
 from Auth.CreateAuth import get_access_token
 
 logging.basicConfig()
@@ -16,7 +16,7 @@ def returnChildOrgs(API_KEY_ID, API_KEY) -> list:
     """
     logger.info(f"Getting child-orgs from multi-org console")
     # access_token = get_access_token(api_key_data["API_KEY_ID"], api_key_data["API_KEY"], org_id=None)
-    access_token = get_access_token(API_KEY_ID, API_KEY, org_id=None)
+    access_token, org_id_ret = get_access_token(API_KEY_ID, API_KEY, org_id=None)
 
     logger = logging.getLogger('Running returnChildOrgs function')
     logger.info(f"Getting Child orgs Multi-org console.")

@@ -3,19 +3,19 @@ import requests
 from requests.auth import HTTPBasicAuth
 import logging
 import base64
-from data_file import api_key_data
+# from data_file import api_key_data
 import hashlib
 
 AuthURL = "https://api.umbrella.com/auth/v2/token"
 server = "https://api.umbrella.com"
-API_KEY_ID = api_key_data["API_KEY_ID"]
-API_KEY = api_key_data["API_KEY"]
+# API_KEY_ID = api_key_data["API_KEY_ID"]
+# API_KEY = api_key_data["API_KEY"]
 
 logging.basicConfig()
 logging.getLogger().setLevel(logging.DEBUG)
 
 
-def get_access_token(api_key_id, api_key, org_id) -> str:
+def get_access_token(api_key_id, api_key, org_id):
 
     """
     Creates the access token string using the API KEY ID and API KEY provided.
@@ -62,7 +62,7 @@ def get_access_token(api_key_id, api_key, org_id) -> str:
         logger.info(f'Note that the token created is valid for {validity} seconds.')
         logger.info(f'The Access token is associated with your org ID => {org_id}')
 
-        return access_token
+        return access_token, org_id
 
 
 def _retOrgIdAuth(org_id, authurl, auth_data):
