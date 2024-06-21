@@ -6,7 +6,7 @@ logging.basicConfig()
 logging.getLogger().setLevel(logging.DEBUG)
 
 
-def fetchOverrideSwgSetting(API_KEY_ID, API_KEY, origin_id, org_id) -> list:
+def fetchOverrideSwgSetting(API_KEY_ID, API_KEY, org_origin_data) -> list:
     """
     Gets the SWG-Enabled settings value if set. And creates if the parameter is non-existence.
     :param API_KEY_ID: API_KEY_ID
@@ -16,11 +16,11 @@ def fetchOverrideSwgSetting(API_KEY_ID, API_KEY, origin_id, org_id) -> list:
     :return: List -> e.g. [{"originId": 627310948, "name": "SWGEnabled", "value": "1", "modifiedAt": "2024-06-11T12:18:17Z"}]
     """
     logger = logging.getLogger('Running fetchOverrideSwgSetting')
-    access_token, ret_org = get_access_token(API_KEY_ID, API_KEY, org_id)
+    access_token, ret_org = get_access_token(API_KEY_ID, API_KEY, org_origin_data['org'])
 
     url = "https://api.umbrella.com/deployments/v2/deviceSettings/SWGEnabled/list"
 
-    payload = f'''{{"originIds": [ {origin_id} ]}}'''
+    payload = f'''{{"originIds": {org_origin_data['list_of_origins']} }}'''
 
     headers = {
         "Content-Type": "application/json",

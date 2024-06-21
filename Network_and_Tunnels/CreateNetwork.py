@@ -16,7 +16,7 @@ def create_network(data) -> str:
     """
     access_token = get_access_token(api_key_data["API_KEY_ID"], api_key_data["API_KEY"])
 
-    logger = logging.getLogger('Running custom Umbrella_app_API_modules create_network Script ')
+    logger = logging.getLogger('Running custom UmbrellaApiTool create_network Script ')
     logger.info('Creating network identity with the data provided: ')
 
     url = "https://api.umbrella.com/deployments/v2/networks"
@@ -36,7 +36,7 @@ def create_network(data) -> str:
     resp_txt = resp.text
     if "The ip address you provided is outside of your verified cidr blocks" == json.loads(resp_txt)['message']:
         print(f"Your device is not behind the public IP {data['ipAddress']} "
-              f"you're trying to add as a network identity on Umbrella_app_API_modules deployment.")
+              f"you're trying to add as a network identity on UmbrellaApiTool deployment.")
     else:
         print("Network identity created")
 

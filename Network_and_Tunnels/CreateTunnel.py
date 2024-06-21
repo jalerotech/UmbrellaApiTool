@@ -15,7 +15,7 @@ def create_tunnel(data) -> bool:
     :return:
     """
 
-    logger = logging.getLogger('Running custom Umbrella_app_API_modules create_tunnel Script ')
+    logger = logging.getLogger('Running custom UmbrellaApiTool create_tunnel Script ')
     logger.info('Creating IPsec Tunnel identity with the tunnel data provided: ')
 
     tunnel_created = False

@@ -6,12 +6,12 @@ from Auth.CreateAuth import get_access_token
 
 def get_tunnels(access_token) -> (bool, list):
     """
-    Queries Umbrella_app_API_modules for the existing tunnels created on your org and deployment
+    Queries UmbrellaApiTool for the existing tunnels created on your org and deployment
     :param :
     :return: tunnel id -> int
     """
 
-    logger = logging.getLogger('Running custom Umbrella_app_API_modules get_tunnels Script. ')
+    logger = logging.getLogger('Running custom UmbrellaApiTool get_tunnels Script. ')
     logger.info(' Fetching Existing tunnels from your org and deployment. ')
 
     url = "https://api.umbrella.com/deployments/v2/tunnels"

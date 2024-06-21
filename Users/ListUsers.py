@@ -38,7 +38,7 @@ def returnUsers(API_KEY_ID, API_KEY, org_id) -> dict:
     try:
         resp = requests.get(url, headers=headers, data=payload)
         response = resp.json()
-        uer_data = {org_id: response}
+        uer_data = {"ListOfUsers": {org_id: response}}
         return uer_data
     except Exception as e:
         logger.info(f"Request failed with {e.args}")

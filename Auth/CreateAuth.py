@@ -26,7 +26,7 @@ def get_access_token(api_key_id, api_key, org_id):
     :return: access_token str
     """
 
-    logger = logging.getLogger('Running custom Umbrella_app_API_modules get_access_token Script ')
+    logger = logging.getLogger('Running custom UmbrellaApiTool get_access_token Script ')
     logger.info('Generating Auth Token using API key.')
 
     authurl = "https://api.umbrella.com/auth/v2/token"
