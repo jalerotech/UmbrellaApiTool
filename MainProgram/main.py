@@ -59,10 +59,6 @@ def main(API_KEY_ID, API_KEY):
 
 
 if __name__ == '__main__':
-    # # Lab MSP API creds (roaming clients only)
-    # API_KEY_ID = "deae3edd0bcf48059eb072725c3cf5be"
-    # API_KEY = "f82510d795a34eae8f0f7adf746b82e7"
-    # SANTANDER keys:
-    API_KEY_ID = '2893a77986cc4340a78733f077db2448'
-    API_KEY = 'ed0ee232eae448ef9d610dce03b6255c'
+    API_KEY_ID = "API_KEY_ID_STRING"
+    API_KEY = "API_KEY_STRING"
     main(API_KEY_ID, API_KEY)
